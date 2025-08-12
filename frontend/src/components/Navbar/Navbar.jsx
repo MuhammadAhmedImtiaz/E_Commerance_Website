@@ -96,10 +96,10 @@ const Navbar = () => {
 
                                                     </li>
                                                 ))}
-                                                
+
                                         </ul>
                                     </div>
-                                    
+
                                 </li>
                             </ul>
                         </div>
@@ -107,8 +107,7 @@ const Navbar = () => {
 
 
                     {/* Navbar Right Section */}
-                    <div className='flex justify-between items-center gap-4
-                '>
+                    <div className='flex justify-between items-center gap-4'>
                         {/* Search Bar Section */}
                         <div className='relative group sm:block'>
                             <input type="text" placeholder='Search' className='search-bar' />
