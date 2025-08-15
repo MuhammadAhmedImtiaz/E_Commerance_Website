@@ -7,11 +7,14 @@ const ProductCards = ({ data }) => {
                 {/* card section */}
                 {
                     data.map((data) => (
-                        <div className='group'
+                        <div
+                        data-aos="fade-up"
+                        data-aos-delay={data.aosDelay}
+                        className='group'
                             key={data.id}>
                             <div className='relative '>
                                 <img src={data.img} alt=""
-                                    className='h-[190px] w-[260px] object-cover rounded-md' />
+                                className='h-[190px] w-[260px] object-cover rounded-md' />
                                 {/* hover button */}
                                 <div className='hidden group-hover:flex absolute top-1/2 -translate-y-1/2 left-1/2  -translate-x-1/2 
                             h-full w-full text-center group-hover:backdrop-blur-sm justify-center items-center

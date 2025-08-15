@@ -48,7 +48,7 @@ const DropdownLinks = [
     },
 
 ]
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
     return (
         <div className='bg-white dark:bg-gray-900 dark:text-white decoration-200 relative z-40'>
             <div className='py-4'>
@@ -88,11 +88,11 @@ const Navbar = () => {
                                             {
                                                 DropdownLinks.map((data, index) => (
                                                     <li>
-                                                        <a href={data.link}
+                                                <a href={data.link}
                                                             className='text-gray-500  
                                              dark:hover:text-white duration-200 inline-block w-full p-2 hover:bg-red-500/20'>
                                                             {data.name}
-                                                        </a>
+                                               </a>
 
                                                     </li>
                                                 ))}
@@ -117,10 +117,11 @@ const Navbar = () => {
                         absolute top-1/2-translate-y-1/2 right-3 duration-200'/>
                         </div>
                         {/* order-button section */}
-                        <button className='relative p-3'>
-                            <FaShoppingCart className='text-xl text-gray-800 dark:text-gray-400' />
+                        <button className='relative p-3' onClick={handleOrderPopup}>
+                            <FaShoppingCart className='text-xl text-gray-800 dark:text-gray-400'  />
                             <div className='w-4 bg-red-500 text-white rounded-full absolute top-0 right-0
-                      flex items-center justify-center text-xs '>
+                      flex items-center justify-center text-xs '
+                            >
                                 4
                             </div>
                         </button>

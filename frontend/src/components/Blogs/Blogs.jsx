@@ -10,6 +10,7 @@ const BlogData = [
     subtitle: "Premium quality, free shipping, 30-day returns.  Add to cart now for exclusive discounts!",
     published: "Jan 20, 2024 by Dilshad",
     img: Img1,
+    aosDelay:"0"
 
   },
   {
@@ -17,6 +18,7 @@ const BlogData = [
     subtitle: "Premium quality, free shipping, 30-day returns.  Add to cart now for exclusive discounts!",
     published: "Jan 20, 2024 by Satya",
     img: Img2,
+    aosDelay:"200"
 
   },
   {
@@ -24,6 +26,7 @@ const BlogData = [
     subtitle: "Premium quality, free shipping, 30-day returns.  Add to cart now for exclusive discounts!",
     published: "Jan 20, 2024 by Sabir",
     img: Img3,
+    aosDelay:"400"
 
   },
 ]
@@ -41,7 +44,8 @@ const Blogs = () => {
           {/* Blog Card */}
           {
             BlogData.map((data) =>
-              <div key={data.title} className='bg-white dark:bg-gray-900 '>
+              <div data-aos="fade-up" data-aos-delay={data.aosDelay}
+              key={data.title} className='bg-white dark:bg-gray-900 '>
                 {/* image section */}
                 <div className='overflow-hidden rounded-2xl mb-2'>
                   <img src={data.img} alt=""
