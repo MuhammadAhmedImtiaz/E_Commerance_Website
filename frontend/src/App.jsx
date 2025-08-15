@@ -24,7 +24,7 @@ const BannerData={
   image:headphone,
   title2:"Air Solo Bags",
   title3:"Winter Sale",
-  title4:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  title4:"Crystal-clear sound meets unbeatable comfort today" ,
   bgColor:'#f42c37'
 
 }
@@ -35,7 +35,7 @@ const BannerData2={
   image:smartwatch2,
   title2:"Smart Salo",
   title3:"Winter Sale",
-  title4:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  title4:"Smart notifications meet all-day comfort on your wrist",
   bgColor:'#2dcc6f'
 
 }

@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="#" className='text-primary  font-semibold tracking-widest text-2xl uppercase sm:text-3xl'>
                     Eshop</a>
                     <p className='text-gray-600 dark:text-white/70 lg:pr-24 pt-3'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum.</p>
+                    Premium electronics, seamless shopping. Your satisfaction, our priority.</p>
                     <p className='text-gray-400 m-4'>Made with 💖 by Ahmed Imtiaz </p>
                     <a href="https://www.linkedin.com/in/muhammad-ahmed-imtiaz-99206b292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
                     className='inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full'
